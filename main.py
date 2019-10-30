@@ -77,16 +77,16 @@ def recursive(urls, new_url):
         csv_file(files)
 
 
-def date_formatter():
-    today = datetime.now().strftime("-%Y-%m-%d-%H-%M")
-    date_today = "output" + today
-    return date_today
+# def date_formatter():
+#     today = datetime.now().strftime("-%Y-%m-%d-%H-%M")
+#     date_today = "output" + today
+#     return date_today
 
 
 def csv_file(files):
-    date_today = date_formatter()
+#     date_today = date_formatter()
 
-    with open(date_today + ".csv", 'a+', encoding='utf-8', newline='') as output_file:
+    with open("output.csv", 'a+', encoding='utf-8', newline='') as output_file:
         writer = csv.writer(output_file, lineterminator='\r')
         writer.writerow(files)
 
