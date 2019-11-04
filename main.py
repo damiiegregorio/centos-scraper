@@ -48,7 +48,7 @@ def get_parent_url():
                 recursive(tr, base_url)
 
     # Raise an exception if we failed to get any data from the url
-    raise Exception('Error retrieving contents at {}'.format(base_url))
+#     raise Exception('Error retrieving contents at {}'.format(base_url))
 
 
 def recursive(urls, new_url):
